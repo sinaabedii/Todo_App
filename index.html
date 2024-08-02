@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sina Abedi | Todo App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Todo App</h2>
+      <div class="input_section">
+        <input type="text" id="task_input" placeholder="Add todo ... " />
+        <input type="date" id="date_input" />
+        <button id="add_button">Add</button>
+        <button id="edit_button">Edit</button>
+      </div>
+      <div class="todos_operator">
+        <div>
+          <button class="filter_todos" data-filter="all">All</button>
+          <button class="filter_todos" data-filter="pending">Pending</button>
+          <button class="filter_todos" data-filter="completed">Completed</button>
+        </div>
+        <button id="delete_all_button">Delete All</button>
+      </div>
+    </div>
+    <div id="alert_massage"></div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
